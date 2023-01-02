@@ -1,10 +1,8 @@
 const path = require("path");
-
-const { merge } = require("webpack-merge");
-const commonConfig = require("./common.webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { createConfig } = require("./common.webpack");
 
-module.exports = merge(commonConfig, {
+module.exports = createConfig({
   mode: "development",
   devtool: "eval-source-map",
   devServer: {
