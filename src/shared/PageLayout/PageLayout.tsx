@@ -1,13 +1,7 @@
 import React from "react";
-import {
-  AppBar,
-  Toolbar,
-  CssBaseline,
-  Button,
-  Box,
-  Typography,
-} from "@mui/material";
-import { config } from "../config";
+import { AppBar, Toolbar, CssBaseline, Box, Typography } from "@mui/material";
+import { config } from "../../config";
+import { AccountButton } from "./AccountButton";
 
 type Props = React.PropsWithChildren;
 
@@ -18,7 +12,7 @@ export const PageLayout = ({ children }: Props) => (
       <Toolbar>
         <Typography variant="h6">{config.appName}</Typography>
         <Box flex={1} />
-        <Button color="inherit">Sign In</Button>
+        <AccountButton />
       </Toolbar>
     </AppBar>
     <Box component="main" padding={3}>

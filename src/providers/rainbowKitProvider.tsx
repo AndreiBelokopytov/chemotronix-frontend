@@ -6,7 +6,7 @@ import { publicProvider } from "wagmi/providers/public";
 import { polygonMumbai } from "wagmi/chains";
 import { config } from "../config";
 
-export const web3Provider = (children: React.ReactNode) => {
+export const rainbowKitProvider = (children: React.ReactNode) => {
   const { chains, provider } = configureChains(
     [polygonMumbai],
     [alchemyProvider({ apiKey: config.alchemyApiKey }), publicProvider()]

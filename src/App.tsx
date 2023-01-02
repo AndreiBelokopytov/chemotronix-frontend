@@ -1,5 +1,6 @@
 import compose from "compose-function";
-import { themeProvider, web3Provider } from "./providers";
+import { themeProvider, rainbowKitProvider } from "./providers";
 import { Dashboard } from "./pages";
 
-export const App = () => compose(themeProvider, web3Provider)(<Dashboard />);
+export const App = () =>
+  compose(themeProvider, rainbowKitProvider)(<Dashboard />);
