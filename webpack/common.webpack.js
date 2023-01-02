@@ -3,12 +3,22 @@ const env = require("dotenv-extended").load({
   errorOnExtra: true,
   errorOnRegex: false,
 });
-
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { mergeWithRules } = require("webpack-merge");
 
-module.exports = {
+const merge = (baseConfig) => (config) =>
+  mergeWithRules({
+    module: {
+      rules: {
+        test: "match",
+        use: "replace",
+      },
+    },
+  })(baseConfig, config);
+
+const commonConfig = {
   entry: path.resolve(__dirname, "../src", "index.tsx"),
   output: {
     path: path.resolve(__dirname, "../dist"),
@@ -67,4 +77,8 @@ module.exports = {
       title: env.APP_NAME,
     }),
   ],
+};
+
+module.exports = {
+  createConfig: merge(commonConfig),
 };
