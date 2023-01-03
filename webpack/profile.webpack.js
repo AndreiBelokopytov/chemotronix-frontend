@@ -1,4 +1,3 @@
-const path = require("path");
 const { createConfig } = require("./common.webpack");
 const BundleAnalyzerPlugin =
   require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
