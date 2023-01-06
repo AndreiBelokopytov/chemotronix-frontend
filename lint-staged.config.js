@@ -1,11 +1,5 @@
 module.exports = {
-  "*.{ts,tsx,js,jsx}": (filenames) => {
-    return [
-      `eslint --max-warnings=0 ${filenames
-        .filter((name) => !/.eslintrc/.test(name))
-        .join(" ")}`,
-    ];
-  },
+  "*.{ts,tsx,js,jsx}": "eslint --max-warnings=0",
   "*.{ts,tsx}": [() => ["tsc"]],
   "**/*": "prettier --write --ignore-unknown",
 };
