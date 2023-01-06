@@ -1,6 +1,15 @@
 import compose from "compose-function";
 import { themeProvider, rainbowKitProvider } from "./providers";
-import { Dashboard } from "./pages";
+import { CssBaseline } from "@mui/material";
+import { Router } from "./Router";
 
 export const App = () =>
-  compose(themeProvider, rainbowKitProvider)(<Dashboard />);
+  compose(
+    themeProvider,
+    rainbowKitProvider
+  )(
+    <>
+      <CssBaseline />
+      <Router />
+    </>
+  );

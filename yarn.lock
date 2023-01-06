@@ -1966,7 +1966,14 @@
   "resolved" "https://registry.npmjs.org/@mui/core-downloads-tracker/-/core-downloads-tracker-5.11.1.tgz"
   "version" "5.11.1"
 
-"@mui/material@5.11.1":
+"@mui/icons-material@^5.11.0":
+  "integrity" "sha512-I2LaOKqO8a0xcLGtIozC9xoXjZAto5G5gh0FYUMAlbsIHNHIjn4Xrw9rvjY20vZonyiGrZNMAlAXYkY6JvhF6A=="
+  "resolved" "https://registry.npmjs.org/@mui/icons-material/-/icons-material-5.11.0.tgz"
+  "version" "5.11.0"
+  dependencies:
+    "@babel/runtime" "^7.20.6"
+
+"@mui/material@^5.0.0", "@mui/material@5.11.1":
   "integrity" "sha512-yaZiXvcrl2vgUK+VO24780BWRgwdAMmAyuMVZnRTts1Yu0tWd6PjIYq2ZtaOlpj6/LbaSS+Q2kSfxYnDQ20CEQ=="
   "resolved" "https://registry.npmjs.org/@mui/material/-/material-5.11.1.tgz"
   "version" "5.11.1"
@@ -2131,6 +2138,11 @@
     "clsx" "1.1.1"
     "qrcode" "1.5.0"
     "react-remove-scroll" "2.5.4"
+
+"@remix-run/router@1.2.1":
+  "integrity" "sha512-XiY0IsyHR+DXYS5vBxpoBe/8veTeoRpMHP+vDosLZxL5bnpetzI0igkxkLZS235ldLzyfkxF+2divEwWHP3vMQ=="
+  "resolved" "https://registry.npmjs.org/@remix-run/router/-/router-1.2.1.tgz"
+  "version" "1.2.1"
 
 "@sinclair/typebox@^0.24.1":
   "version" "0.24.51"
@@ -10653,7 +10665,7 @@
     "node-dir" "^0.1.10"
     "strip-indent" "^3.0.0"
 
-"react-dom@^0.14.8 || ^15.0.1 || ^16.0.0 || ^17.0.1", "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0", "react-dom@^17.0.0 || ^18.0.0", "react-dom@>= 16.8.6", "react-dom@>=16.6.0", "react-dom@>=17", "react-dom@18.0.0":
+"react-dom@^0.14.8 || ^15.0.1 || ^16.0.0 || ^17.0.1", "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0", "react-dom@^17.0.0 || ^18.0.0", "react-dom@>= 16.8.6", "react-dom@>=16.6.0", "react-dom@>=16.8", "react-dom@>=17", "react-dom@18.0.0":
   "version" "18.0.0"
   dependencies:
     "loose-envify" "^1.1.0"
@@ -10724,6 +10736,21 @@
     "tslib" "^2.1.0"
     "use-callback-ref" "^1.3.0"
     "use-sidecar" "^1.1.2"
+
+"react-router-dom@^6.6.1":
+  "integrity" "sha512-u+8BKUtelStKbZD5UcY0NY90WOzktrkJJhyhNg7L0APn9t1qJNLowzrM9CHdpB6+rcPt6qQrlkIXsTvhuXP68g=="
+  "resolved" "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.6.1.tgz"
+  "version" "6.6.1"
+  dependencies:
+    "@remix-run/router" "1.2.1"
+    "react-router" "6.6.1"
+
+"react-router@6.6.1":
+  "integrity" "sha512-YkvlYRusnI/IN0kDtosUCgxqHeulN5je+ew8W+iA1VvFhf86kA+JEI/X/8NqYcr11hCDDp906S+SGMpBheNeYQ=="
+  "resolved" "https://registry.npmjs.org/react-router/-/react-router-6.6.1.tgz"
+  "version" "6.6.1"
+  dependencies:
+    "@remix-run/router" "1.2.1"
 
 "react-style-singleton@^2.2.1":
   "integrity" "sha512-ZWj0fHEMyWkHzKYUr2Bs/4zU6XLmq9HsgBURm7g5pAVfyn49DgUiNgY2d4lXRlYSiCif9YBGpQleewkcqddc7g=="
