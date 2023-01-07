@@ -47,6 +47,14 @@ const components: ThemeOptions["components"] = {
       },
     },
   },
+  MuiListItemButton: {
+    styleOverrides: {
+      root: {
+        margin: "0 16px 8px 16px",
+        borderRadius: "48px",
+      },
+    },
+  },
 };
 
 theme = createTheme(theme, { components });
