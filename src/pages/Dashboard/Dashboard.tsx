@@ -1,3 +1,4 @@
+import { Paper, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { BigNumber } from "ethers";
 import { PageLayout } from "../../shared/PageLayout";
@@ -27,9 +28,19 @@ export const Dashboard = () => {
           }}
         />
       </Box>
-      <Box sx={{ display: "flex", flexDirection: "row", mt: 3 }}>
+      <Paper
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          mt: 3,
+          overflow: "hidden",
+        }}
+      >
+        <Typography variant="h6" component="h6" sx={{ padding: 2 }}>
+          Credit Transaction/Usage
+        </Typography>
         <TransactionsTable transactions={transactions} sx={{ flex: 1 }} />
-      </Box>
+      </Paper>
     </PageLayout>
   );
 };

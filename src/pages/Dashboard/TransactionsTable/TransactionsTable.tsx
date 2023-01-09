@@ -1,6 +1,5 @@
 import {
   TableContainer,
-  Paper,
   Table,
   TableHead,
   TableBody,
@@ -23,7 +22,7 @@ type Props = React.ComponentProps<typeof TableContainer> & {
 
 export const TransactionsTable = ({ transactions, ...rest }: Props) => {
   return (
-    <TableContainer {...rest} component={Paper}>
+    <TableContainer {...rest}>
       <Table>
         <TableHead>
           <TableRow>
