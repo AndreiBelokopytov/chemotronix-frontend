@@ -2,6 +2,7 @@ const env = require("dotenv-extended").load({
   errorOnMissing: true,
   errorOnExtra: true,
   errorOnRegex: false,
+  includeProcessEnv: true,
 });
 const path = require("path");
 const webpack = require("webpack");
