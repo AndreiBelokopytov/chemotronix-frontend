@@ -45,6 +45,26 @@ const components: ThemeOptions["components"] = {
       },
     },
   },
+  MuiCard: {
+    defaultProps: {
+      elevation: 0,
+    },
+    styleOverrides: {
+      root: {
+        borderRadius: 10,
+      },
+    },
+  },
+  MuiPaper: {
+    defaultProps: {
+      elevation: 0,
+    },
+    styleOverrides: {
+      root: {
+        borderRadius: 10,
+      },
+    },
+  },
   MuiButton: {
     defaultProps: {
       disableElevation: true,
