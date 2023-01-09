@@ -20,6 +20,7 @@ import {
 import { config } from "../../config";
 import { AccountButton } from "./AccountButton";
 import { NavLink } from "./NavLink";
+import logo from "../../assets/logo.png";
 
 type Props = React.PropsWithChildren & {
   title?: string;
@@ -47,6 +48,16 @@ export const PageLayout = ({ children, title }: Props) => {
     () => (
       <>
         <Toolbar></Toolbar>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            pb: 5,
+          }}
+        >
+          <img src={logo} width={86} height={74} alt="Chemotronix logo" />
+        </Box>
         <List>
           {navItems.map(({ text, icon, url }, index) => (
             <NavLink key={index} text={text} icon={icon} url={url} />
