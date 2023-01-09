@@ -15,13 +15,20 @@ export const Dashboard = () => {
       <Box sx={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
         <CarbonCreditsCard
           balance={carbonCreditsBalance}
-          sx={{ minWidth: 275 }}
+          sx={{ width: { sm: "100%", md: "auto" }, minWidth: { md: 275 } }}
         />
-        <DevicesCard devices={devices} sx={{ marginLeft: 3, minWidth: 275 }} />
-        <TransactionsTable
-          transactions={transactions}
-          sx={{ flex: 1, overflow: "visible", marginTop: 3 }}
+        <DevicesCard
+          devices={devices}
+          sx={{
+            width: { sm: "100%", md: "auto" },
+            minWidth: { md: 275 },
+            ml: { md: 3 },
+            mt: { sm: 3, md: 0 },
+          }}
         />
+      </Box>
+      <Box sx={{ display: "flex", flexDirection: "row", mt: 3 }}>
+        <TransactionsTable transactions={transactions} sx={{ flex: 1 }} />
       </Box>
     </PageLayout>
   );

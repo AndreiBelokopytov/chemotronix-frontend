@@ -13,6 +13,15 @@ let theme = createTheme({
       dark: "#00662B",
     },
   },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 862,
+      lg: 1200,
+      xl: 1536,
+    },
+  },
 });
 
 const components: ThemeOptions["components"] = {
